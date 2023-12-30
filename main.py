@@ -1,6 +1,9 @@
-import sqlite3 as sq
+from menu import do_menu
 
-con = sq.connect("PhoneDirectory_DataBase.db")
-cur = con.cursor()
-cur.close()
-con.close()
+
+def main():
+    do_menu()
+
+
+if __name__ == "__main__":
+    main()
